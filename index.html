@@ -9,9 +9,11 @@
 <title>Coding Quiz</title>
 <body>
     <div class="quizContainer container-fluid well well-lg">
-        <div id="" class="text-center">
-			<h4 style="color:#000000;position:absolute;right:5%;top:30%;" align="center" ><span id="iTimeShow">Time Left: </span><br/><span id='timer' style="font-size:25px;"></span></h4>
-			<h2>How Well Do You Know The San Francisco Giants</h2>
+        <button id="start-btn">Start</button>
+        <div id="questionblock" style="display: none">
+            <div id="" class="text-center">
+                <div>Registration closes in <span id="time"></span> seconds!</div>
+			<h2 id="question"></h2>
 		</div>
         <div class="question"></div>
         <ul class="choiceList"></ul>
@@ -19,6 +21,7 @@
         <div class="result"></div>
 		<button class="preButton">Previous</button>
         <button class="nextButton">Next</button>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
